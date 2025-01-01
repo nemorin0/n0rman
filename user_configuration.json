@@ -104,14 +104,23 @@
         "dos2unix",
         "ghidra",
         "lynx",
+        "links",
         "libreoffice-still",
         "flameshot",
         "tor",
         "torbrowser-launcher",
         "proxychains-ng",
         "nikto",
-        "metasploit"
-
+        "metasploit",
+        "hydra",
+        "medusa",
+        "sqlmap",
+        "macchanger",
+        "7zip",
+        "unzip",
+        "gdb",
+        "valgrind",
+        "sshuttle"
     ],
     "parallel downloads": 0,
     "profile_config": {
