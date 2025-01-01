@@ -1,0 +1,135 @@
+{
+    "additional-repositories": [],
+    "archinstall-language": "English",
+    "audio_config": null,
+    "bootloader": "Grub",
+    "config_version": "3.0.1",
+    "disk_config": {
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/vda",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "boot"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "281e4fd4-0ce7-4c10-9d1d-432450522a8c",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 1
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "MiB",
+                            "value": 3
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/",
+                        "obj_id": "2b6ea510-2efa-45c4-9861-2f266a9da813",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 127772131328
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 1076887552
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ]
+    },
+    "disk_encryption": null,
+    "hostname": "n0rman",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US"
+    },
+    "network_config": {
+        "type": "iso"
+    },
+    "ntp": true,
+    "packages": [
+        "hashcat",
+        "tmux",
+        "firefox",
+        "nmap",
+        "curl",
+        "vim",
+        "xdm-archlinux",
+        "wireshark-qt",
+        "tcpdump",
+        "git",
+        "john",
+        "hcxtools",
+        "hcxkeys",
+        "openvpn",
+        "smbclient",
+        "dos2unix",
+        "ghidra",
+        "lynx",
+        "libreoffice-still",
+        "flameshot",
+        "tor",
+        "torbrowser-launcher",
+        "proxychains-ng",
+        "nikto",
+        "metasploit"
+
+    ],
+    "parallel downloads": 0,
+    "profile_config": {
+        "gfx_driver": "All open-source",
+        "greeter": "lightdm-gtk-greeter",
+        "profile": {
+            "custom_settings": {
+                "Xfce4": {}
+            },
+            "details": [
+                "Xfce4"
+            ],
+            "main": "Desktop"
+        }
+    },
+    "save_config": null,
+    "swap": false,
+    "timezone": "US/Eastern",
+    "uki": false,
+    "version": "3.0.1"
+}
