@@ -3,6 +3,7 @@ arch linux install for penetration testing
 
 ## Installation
 
+1. Boot from the standard [Arch Linux installation media](https://archlinux.org/download/)
 1. Download [user_configuration.json](https://github.com/nemorin0/n0rman/raw/refs/heads/main/user_configuration.json)
 1. run the following:
     ```bash
