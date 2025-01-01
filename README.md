@@ -8,6 +8,7 @@ arch linux install for penetration testing
 ```bash
 archinstall --config user_configuration.json
 ```
+
     1. Set mirror location
     1. Set default user account
     1. Install Arch Linux
