@@ -217,7 +217,11 @@
 		"screenfetch",
 		"which",
 		"chromium",
-		"neovim"
+		"neovim",
+		"xorg-server",
+		"xorg-apps",
+		"xterm",
+		"kitty"
 	],
     "pacman_config": {
         "color": true,
