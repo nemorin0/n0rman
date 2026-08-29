@@ -7,7 +7,9 @@
         "removable": false,
         "uki": false
     },
-    "custom_commands": [],
+    "custom_commands": [
+			"curl https://raw.githubusercontent.com/nemorin0/n0rman/refs/heads/main/postinstall.sh | bash"
+	],
     "disk_config": {
         "config_type": "default_layout",
         "device_modifications": [
