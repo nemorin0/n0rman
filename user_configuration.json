@@ -1,9 +1,13 @@
 {
-    "additional-repositories": [],
-    "archinstall-language": "English",
-    "audio_config": null,
-    "bootloader": "Grub",
-    "config_version": "3.0.1",
+    "app_config": {},
+    "archinstall_language": "English",
+    "auth_config": {},
+    "bootloader_config": {
+        "bootloader": "Grub",
+        "removable": false,
+        "uki": false
+    },
+    "custom_commands": [],
     "disk_config": {
         "config_type": "default_layout",
         "device_modifications": [
@@ -19,7 +23,7 @@
                         "fs_type": "fat32",
                         "mount_options": [],
                         "mountpoint": "/boot",
-                        "obj_id": "281e4fd4-0ce7-4c10-9d1d-432450522a8c",
+                        "obj_id": "e12203f0-0045-4c7f-aebe-696c07f4065e",
                         "size": {
                             "sector_size": {
                                 "unit": "B",
@@ -34,7 +38,7 @@
                                 "value": 512
                             },
                             "unit": "MiB",
-                            "value": 3
+                            "value": 1
                         },
                         "status": "create",
                         "type": "primary"
@@ -46,14 +50,14 @@
                         "fs_type": "ext4",
                         "mount_options": [],
                         "mountpoint": "/",
-                        "obj_id": "2b6ea510-2efa-45c4-9861-2f266a9da813",
+                        "obj_id": "6ef8791c-4a48-47a1-ba4d-0c8510b5bef3",
                         "size": {
                             "sector_size": {
                                 "unit": "B",
                                 "value": 512
                             },
                             "unit": "B",
-                            "value": 127772131328
+                            "value": 106299392000
                         },
                         "start": {
                             "sector_size": {
@@ -61,7 +65,7 @@
                                 "value": 512
                             },
                             "unit": "B",
-                            "value": 1076887552
+                            "value": 1074790400
                         },
                         "status": "create",
                         "type": "primary"
@@ -71,18 +75,92 @@
             }
         ]
     },
-    "disk_encryption": null,
-    "hostname": "n0rman",
+    "hostname": "archlinux",
     "kernels": [
         "linux"
     ],
     "locale_config": {
+        "console_font": "default8x16",
         "kb_layout": "us",
         "sys_enc": "UTF-8",
-        "sys_lang": "en_US"
+        "sys_lang": "en_US.UTF-8"
+    },
+    "mirror_config": {
+        "custom_repositories": [],
+        "custom_servers": [],
+        "mirror_regions": {
+            "United States": [
+                "https://mirrors.rit.edu/archlinux/$repo/os/$arch",
+                "https://mirror.umd.edu/archlinux/$repo/os/$arch",
+                "https://ftp.osuosl.org/pub/archlinux/$repo/os/$arch",
+                "https://mirrors.lug.mtu.edu/archlinux/$repo/os/$arch",
+                "https://mirrors.kernel.org/archlinux/$repo/os/$arch",
+                "https://mirror.sfo12.us.leaseweb.net/archlinux/$repo/os/$arch",
+                "https://mirror.wdc1.us.leaseweb.net/archlinux/$repo/os/$arch",
+                "https://dfw.mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "https://iad.mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "https://ord.mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "https://arch.mirror.constant.com/$repo/os/$arch",
+                "https://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch",
+                "https://us.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "https://mirrors.sonic.net/archlinux/$repo/os/$arch",
+                "https://mirrors.xtom.com/archlinux/$repo/os/$arch",
+                "https://repo.ialab.dsu.edu/archlinux/$repo/os/$arch",
+                "https://iad.mirrors.misaka.one/archlinux/$repo/os/$arch",
+                "https://mirror.pit.teraswitch.com/archlinux/$repo/os/$arch",
+                "https://mirror.arizona.edu/archlinux/$repo/os/$arch",
+                "https://archmirror1.octyl.net/$repo/os/$arch",
+                "https://plug-mirror.rcac.purdue.edu/archlinux/$repo/os/$arch",
+                "https://mirrors.mit.edu/archlinux/$repo/os/$arch",
+                "https://arch.hu.fo/archlinux/$repo/os/$arch",
+                "https://zxcvfdsa.com/arch/$repo/os/$arch",
+                "https://mirror.clarkson.edu/archlinux/$repo/os/$arch",
+                "https://mirrors.bloomu.edu/archlinux/$repo/os/$arch",
+                "https://codingflyboy.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://coresite.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://forksystems.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://irltoolkit.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://mirror.fcix.net/archlinux/$repo/os/$arch",
+                "https://nnenix.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://nocix.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://ohioix.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://opencolo.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://southfront.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://volico.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://ziply.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://losangeles.mirror.pkgbuild.com/$repo/os/$arch",
+                "https://arch.mirror.k0.ae/$repo/os/$arch",
+                "https://mirror.zackmyers.io/archlinux/$repo/os/$arch",
+                "https://m.lqy.me/arch/$repo/os/$arch",
+                "https://mirror.adectra.com/archlinux/$repo/os/$arch",
+                "https://arch.goober.cloud/$repo/os/$arch",
+                "https://mirror.pilotfiber.com/archlinux/$repo/os/$arch",
+                "https://mirrors.iu13.net/archlinux/$repo/os/$arch",
+                "https://mirror.colonelhosting.com/archlinux/$repo/os/$arch",
+                "https://us.arch.niranjan.co/$repo/os/$arch",
+                "https://us-mnz.soulharsh007.dev/archlinux/$repo/os/$arch",
+                "https://mirror.us.cdn-perfprod.com/archlinux/$repo/os/$arch",
+                "https://arch.miningtcup.me/$repo/os/$arch",
+                "https://arch-mirror.brightlight.today/$repo/os/$arch",
+                "https://yonderly.org/mirrors/archlinux/$repo/os/$arch",
+                "https://mirrors.lahansons.com/archlinux/$repo/os/$arch",
+                "https://mirror.givebytes.net/archlinux/$repo/os/$arch",
+                "https://mirror2.givebytes.net/archlinux/$repo/os/$arch",
+                "https://mirrors.shr.cx/arch/$repo/os/$arch",
+                "https://mirror.mra.sh/archlinux/$repo/os/$arch",
+                "https://mirror.cs.odu.edu/archlinux/$repo/os/$arch",
+                "https://arch.hugeblank.dev/$repo/os/$arch",
+                "https://mirrors.logal.dev/archlinux/$repo/os/$arch",
+                "https://mirror.tzulo.com/archlinux/$repo/os/$arch",
+                "https://mirror.lug.umbc.edu/archlinux/$repo/os/$arch",
+                "https://us.mirrors.mk/archlinux/$repo/os/$arch",
+                "https://mirror.kalem.dev/archlinux/$repo/os/$arch"
+            ]
+        },
+        "optional_repositories": []
     },
     "network_config": {
-        "type": "iso"
+        "type": "nm"
     },
     "ntp": true,
     "packages": [
@@ -120,25 +198,46 @@
         "unzip",
         "gdb",
         "valgrind",
-        "sshuttle"
-    ],
-    "parallel downloads": 0,
+        "zaproxy",
+        "sshuttle",
+        "spice-vdagent",
+        "less",
+        "man-db",
+        "plocate",
+        "net-snmp",
+        "samba",
+        "impacket",
+        "openldap",
+        "python-pip",
+        "python-virtualenv",
+        "nfs-utils",
+        "bind",
+        "go",
+		"awesome",
+		"screenfetch",
+		"which",
+		"chromium",
+		"neovim"
+	],
+    "pacman_config": {
+        "color": true,
+        "parallel_downloads": 5
+    },
     "profile_config": {
-        "gfx_driver": "All open-source",
-        "greeter": "lightdm-gtk-greeter",
+        "gfx_driver": null,
+        "greeter": null,
         "profile": {
-            "custom_settings": {
-                "Xfce4": {}
-            },
-            "details": [
-                "Xfce4"
-            ],
-            "main": "Desktop"
+            "custom_settings": {},
+            "details": [],
+            "main": "Minimal"
         }
     },
-    "save_config": null,
-    "swap": false,
+    "script": null,
+    "services": [],
+    "swap": {
+        "algorithm": "zstd",
+        "enabled": true
+    },
     "timezone": "US/Eastern",
-    "uki": false,
-    "version": "3.0.1"
+    "version": "4.4"
 }
